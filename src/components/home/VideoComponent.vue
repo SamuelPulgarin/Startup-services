@@ -110,7 +110,7 @@ const props = defineProps({
                 <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
-                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-700 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">
                             <span class="material-symbols-outlined text-white text-lg">
                                 subject
                             </span>
@@ -131,7 +131,7 @@ const props = defineProps({
                 <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
-                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-700 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">
                             <span class="material-symbols-outlined text-white text-lg">
                                 view_kanban
                             </span>
@@ -152,7 +152,7 @@ const props = defineProps({
                 <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
-                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-700 sm:ring-8 dark:ring-gray-900 shrink-0">
+                            class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">
                             <span class="material-symbols-outlined text-white text-lg">
                                 checklist
                             </span>
