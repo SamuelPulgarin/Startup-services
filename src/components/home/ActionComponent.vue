@@ -148,7 +148,6 @@ const setCard = (number) => {
     card.value = number
 }
 
-
 </script>
 
 <style>
