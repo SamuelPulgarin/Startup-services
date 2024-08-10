@@ -52,8 +52,8 @@
                     </li>
                 </ul>
                 <div class="flex mt-5">
-                    <img class="rounded-full border border-gray-400 w-8 h-8 mr-3"
-                        src="../../assets/images/Jhon_Henry.jpg" alt="CEO image">
+                    <img class="rounded-full border border-gray-400 w-10 h-10 mr-3"
+                        src="../../assets/images/home/Jhon_Henry.jpg" alt="CEO image">
                     <div class="flex flex-col">
                         <i class="text-gray-400">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
                             cum laboriosam, tenetur"</i>

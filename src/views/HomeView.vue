@@ -12,8 +12,8 @@
         <ActionComponent />
         <TeamComponent />
         <PostComponent />
+        <FooterLayout />
     </div>
-
 </template>
 
 <script setup>
@@ -22,6 +22,7 @@ import CeoComponent from '../components/home/CeoComponent.vue';
 import PostComponent from '../components/home/PostComponent.vue';
 import TeamComponent from '../components/home/TeamComponent.vue';
 import VideoComponent from '../components/home/VideoComponent.vue';
+import FooterLayout from '../layouts/FooterLayout.vue';
 import NavbarLayout from '../layouts/NavbarLayout.vue';
 import thumbImage from '../video/Example-video.jpg';
 import videoVideo from '../video/Example-video.mp4';
