@@ -13,7 +13,11 @@
 
             <div class="flex gap-x-5 justify-center mt-10">
                 <button
-                    class="flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl opacity-70 focus:opacity-100"
+                    :class="{
+                        'flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl': true, 
+                        'opacity-70': card !== 1,
+                        'focus:opacity-100': card === 1,
+                        }"
                     @click="setCard(1)">
                     <span class="material-symbols-outlined text-lg text-indigo-700">
                         favorite
@@ -24,7 +28,7 @@
                     class="flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl opacity-70 focus:opacity-100"
                     @click="setCard(2)">
                     <span class="material-symbols-outlined text-lg text-indigo-700">
-                        favorite
+                        local_fire_department
                     </span>
                     <p>Quick action</p>
                 </button>
@@ -32,7 +36,7 @@
                     class="flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl opacity-70 focus:opacity-100"
                     @click="setCard(3)">
                     <span class="material-symbols-outlined text-lg text-indigo-700">
-                        favorite
+                        electric_bolt
                     </span>
                     <p>Quick action</p>
                 </button>
@@ -40,7 +44,7 @@
                     class="flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl opacity-70 focus:opacity-100"
                     @click="setCard(4)">
                     <span class="material-symbols-outlined text-lg text-indigo-700">
-                        favorite
+                        pace
                     </span>
                     <p>Quick action</p>
                 </button>
@@ -48,94 +52,101 @@
                     class="flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl opacity-70 focus:opacity-80"
                     @click="setCard(5)">
                     <span class="material-symbols-outlined text-lg text-indigo-700">
-                        favorite
+                        psychiatry
                     </span>
                     <p>Quick action</p>
                 </button>
             </div>
 
-            <div v-if="card === 1" class="flex justify-center items-center mt-20 bg-gray-700 w-168 fade-in-card">
-                <div class="w-132 px-6">
-                    <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
-                    <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
-                        laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.</p>
-                    <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
-                        more →</button>
+            <TransitionGroup name="fade" mode="out-in" tag="div" class="max-h-96">
+                <div v-if="card === 1" class="flex justify-center items-center mt-20 bg-gray-700 w-168">
+                    <div class="w-132 px-6">
+                        <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
+                        <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
+                            laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.
+                        </p>
+                        <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
+                            more →</button>
+                    </div>
+                    <div class="w-136">
+                        <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
+                            alt="Product team image">
+                    </div>
                 </div>
-                <div class="w-136">
-                    <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
-                        alt="Product team image">
-                </div>
-            </div>
 
-            <div v-if="card === 2" class="flex justify-center items-center mt-20 bg-gray-700 w-168 fade-in-card">
-                <div class="w-136">
-                    <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
-                        alt="Product team image">
+                <div v-if="card === 2" class="flex justify-center items-center mt-20 bg-gray-700 w-168 max-h-fu">
+                    <div class="w-136">
+                        <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
+                            alt="Product team image">
+                    </div>
+                    <div class="w-132 px-6">
+                        <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
+                        <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
+                            laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.
+                        </p>
+                        <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
+                            more →</button>
+                    </div>
                 </div>
-                <div class="w-132 px-6">
-                    <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
-                    <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
-                        laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.</p>
-                    <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
-                        more →</button>
-                </div>
-            </div>
 
-            <div v-if="card === 3" class="flex justify-center items-center mt-20 bg-gray-700 w-168 fade-in-card">
-                <div class="w-132 px-6">
-                    <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
-                    <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
-                        laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.</p>
-                    <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
-                        more →</button>
+                <div v-if="card === 3" class="flex justify-center items-center mt-20 bg-gray-700 w-168">
+                    <div class="w-132 px-6">
+                        <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
+                        <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
+                            laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.
+                        </p>
+                        <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
+                            more →</button>
+                    </div>
+                    <div class="w-136">
+                        <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
+                            alt="Product team image">
+                    </div>
                 </div>
-                <div class="w-136">
-                    <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
-                        alt="Product team image">
-                </div>
-            </div>
 
-            <div v-if="card === 4" class="flex justify-center items-center mt-20 bg-gray-700 w-168 fade-in-card">
-                <div class="w-136">
-                    <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
-                        alt="Product team image">
+                <div v-if="card === 4" class="flex justify-center items-center mt-20 bg-gray-700 w-168">
+                    <div class="w-136">
+                        <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
+                            alt="Product team image">
+                    </div>
+                    <div class="w-132 px-6">
+                        <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
+                        <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
+                            laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.
+                        </p>
+                        <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
+                            more →</button>
+                    </div>
                 </div>
-                <div class="w-132 px-6">
-                    <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
-                    <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
-                        laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.</p>
-                    <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
-                        more →</button>
-                </div>
-            </div>
 
-            <div v-if="card === 5" class="flex justify-center items-center mt-20 bg-gray-700 w-168 fade-in-card">
-                <div class="w-132 px-6">
-                    <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
-                    <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
-                        adipisicing
-                        elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
-                        laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.</p>
-                    <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
-                        more →</button>
+                <div v-if="card === 5" class="flex justify-center items-center mt-20 bg-gray-700 w-168">
+                    <div class="w-132 px-6">
+                        <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>
+                        <p class="text-lg font-normal text-gray-400 pt-3">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Eius aliquid ducimus quisquam libero consectetur eligendi officiis nisi quam neque,
+                            laborum hic commodi ut delectus perspiciatis aspernatur vero incidunt, explicabo reiciendis.
+                        </p>
+                        <button class="text-base mt-5 bg-indigo-500 text-white rounded py-2 px-5 hover:opacity-90">Learn
+                            more →</button>
+                    </div>
+                    <div class="w-136">
+                        <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
+                            alt="Product team image">
+                    </div>
                 </div>
-                <div class="w-136">
-                    <img class="w-full opacity-75" src="../../assets/images/home/product_team.jpg"
-                        alt="Product team image">
-                </div>
-            </div>
+            </TransitionGroup>
         </div>
 
-        <div class="hidden mt-20 sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        <div class="hidden mt-28 sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
     </section>
 </template>
 
@@ -150,11 +161,30 @@ const setCard = (number) => {
 
 </script>
 
-<style>
-.fade-in-card {
-    animation: fadeIn 1s;
+<style scoped>
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.fade-enter-active {
+    transition-delay: 0.2s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    transform: scale(0.99);
+}
+
+.fade-enter-to,
+.fade-leave-from {
+    opacity: 1;
+    transform: scale(1);
+}
+</style>
+<!-- 
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -166,4 +196,19 @@ const setCard = (number) => {
         transform: scale(1);
     }
 }
-</style>
+
+.fade-out-card {
+    animation: fadeOut 1s forwards;
+} 
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.99);
+    }
+} -->

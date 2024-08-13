@@ -33,7 +33,7 @@ const props = defineProps({
     <section class="mt-20">
 
         <div class="flex flex-col items-center">
-            <h1 class="text-6xl font-bold text-gray-200 text-center  w-150">Landing for you business</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" class="text-6xl font-bold text-gray-200 text-center  w-150">Landing for you business</h1>
             <h3 class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Our landing page template works
                 on all devices, so you only have to set it up once, and get beautiful
                 results forever.</h3>
