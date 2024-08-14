@@ -33,17 +33,24 @@ const props = defineProps({
     <section class="mt-20">
 
         <div class="flex flex-col items-center">
-            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" class="text-6xl font-bold text-gray-200 text-center  w-150">Landing for you business</h1>
-            <h3 class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Our landing page template works
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                class="text-6xl font-bold text-gray-200 text-center w-150">Landing for you business
+            </h1>
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="300" class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Our landing
+                page template works
                 on all devices, so you only have to set it up once, and get beautiful
                 results forever.</h3>
         </div>
 
         <div class="mb-12 flex justify-center">
-            <button class="mr-5 bg-indigo-500 text-white rounded py-3 px-8 hover:opacity-90">Start with us</button>
-            <button class="ml-5 bg-gray-900 text-white rounded py-3 px-8 hover:opacity-90">Learn more</button>
+            <button data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="500" class="mr-5 bg-indigo-500 text-white rounded py-3 px-8 hover:opacity-90">Start with us</button>
+            <button data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="top-bottom"
+            data-aos-delay="600" class="ml-5 bg-gray-900 text-white rounded py-3 px-8 hover:opacity-90">Learn more</button>
         </div>
-        <div class="flex justify-center">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+        data-aos-delay="300" data-aos-offset="-200" class="flex justify-center">
 
             <!-- Video thumbnail -->
             <button
@@ -95,10 +102,12 @@ const props = defineProps({
 
 
         <div class="flex flex-col items-center mt-32">
-            <h1 class="text-5xl font-bold text-gray-200 text-center w-150">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            class="text-5xl font-bold text-gray-200 text-center w-150">
                 Built exclusively for you
             </h1>
-            <h3 class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Lorem, ipsum dolor sit amet
+            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="300" class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Lorem, ipsum dolor sit amet
                 consectetur adipisicing elit. Quo natus eaque
                 quas
                 omnis
@@ -107,7 +116,8 @@ const props = defineProps({
 
         <div>
             <ol class="flex justify-center items-center sm:flex">
-                <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -128,7 +138,8 @@ const props = defineProps({
                             and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="300" class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">
@@ -149,7 +160,8 @@ const props = defineProps({
                             and interactive elements.</p>
                     </div>
                 </li>
-                <li class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
+                <li data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="450" class="relative mb-6 sm:mb-0 w-80 m-10 text-center">
                     <div class="flex items-center">
                         <div
                             class="z-10 flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full ring-0 ring-white dark:bg-indigo-600 sm:ring-8 dark:ring-gray-900 shrink-0">

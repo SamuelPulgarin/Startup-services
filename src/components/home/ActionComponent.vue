@@ -2,16 +2,19 @@
     <section>
         <div class="flex flex-col items-center justify-center mt-20">
             <div class="flex flex-col items-center w-150">
-                <h2 class="text-center text-5xl font-semibold text-gray-200 my-2">Integrated workflow designed for
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                class="text-center text-5xl font-semibold text-gray-200 my-2">Integrated workflow designed for
                     product teams
                 </h2>
-                <h3 class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Lorem ipsum dolor, sit amet
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="300" class="text-lg font-medium text-gray-400 text-center m-5 px-20 w-150">Lorem ipsum dolor, sit amet
                     consectetur adipisicing elit. Laboriosam ullam nam perspiciatis natus porro quaerat necessitatibus
                     accusamus.
                 </h3>
             </div>
 
-            <div class="flex gap-x-5 justify-center mt-10">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="500" class="flex gap-x-5 justify-center mt-10">
                 <button
                     :class="{
                         'flex items-center gap-x-2 px-6 py-2 text-base text-gray-400 bg-gray-900 rounded-3xl': true, 
@@ -58,7 +61,8 @@
                 </button>
             </div>
 
-            <TransitionGroup name="fade" mode="out-in" tag="div" class="max-h-96">
+            <TransitionGroup data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            name="fade" mode="out-in" tag="div" class="max-h-96">
                 <div v-if="card === 1" class="flex justify-center items-center mt-20 bg-gray-700 w-168">
                     <div class="w-132 px-6">
                         <h3 class="text-2xl font-semibold text-gray-200">Optimize and scale your projects</h3>

@@ -1,6 +1,6 @@
 <template>
     <section class="font-inter mt-14 flex justify-center gap-x-16 items-center">
-        <div class="w-132">
+        <div data-aos="fade-right" data-aos-duration="1500" class="w-132">
             <div>
                 <p class="text-lg font-architects font-medium text-indigo-500">I thinkind fast workflow</p>
                 <h2 class="text-3xl font-semibold text-gray-200 my-2">Say hello to search data</h2>
@@ -70,7 +70,8 @@
             </div>
         </div>
 
-        <div class="relative w-fit h-fit">
+        <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom"
+            class="relative w-fit h-fit">
             <!-- Imagen de fondo -->
             <img class="w-132 h-auto" src="../../assets/images/home/chat_bubbles.png" alt="Chats de Whatsapp">
 
@@ -78,8 +79,8 @@
             <svg class="absolute inset-0" width="540" height="520" viewBox="0 0 540 520"
                 xmlns="http://www.w3.org/2000/svg">
                 <g class="text-transparent">
-                    <circle class="fill-indigo-500" cx="270" cy="260" r="64"
-                        stroke="currentColor" stroke-width="4" fill="none"></circle>
+                    <circle class="fill-indigo-500" cx="270" cy="260" r="64" stroke="currentColor" stroke-width="4"
+                        fill="none"></circle>
                     <circle class="animate-slow-ping transition origin-center fill-indigo-500" cx="270" cy="260" r="64"
                         stroke="currentColor" stroke-width="4" fill="none" style="animation-delay: 1s;"></circle>
                     <circle class="animate-slow-ping transition origin-center fill-indigo-500" cx="270" cy="260" r="64"
@@ -88,7 +89,7 @@
                         stroke="currentColor" stroke-width="4" fill="none" style="animation-delay: 5s;"></circle>
                     <circle class="animate-slow-ping transition origin-center fill-indigo-500" cx="270" cy="260" r="64"
                         stroke="currentColor" stroke-width="4" fill="none" style="animation-delay: 7s;"></circle>
-                        <circle class="animate-slow-ping transition origin-center fill-indigo-500" cx="270" cy="260" r="64"
+                    <circle class="animate-slow-ping transition origin-center fill-indigo-500" cx="270" cy="260" r="64"
                         stroke="currentColor" stroke-width="4" fill="none" style="animation-delay: 9s;"></circle>
                 </g>
             </svg>

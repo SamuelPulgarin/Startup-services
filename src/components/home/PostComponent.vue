@@ -1,7 +1,8 @@
 <template>
     <section class="flex justify-center gap-x-8">
         <article>
-            <div class="w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="100" class="w-80">
                 <header>
                     <div class="w-80 h-48 overflow-hidden inline-block rounded-lg cursor-pointer">
                         <img class="hover:scale-105 duration-300 transition-transform ease-in" src="../../assets/images/home/post_image.jpg" alt="Imagen en base de datos">
@@ -31,7 +32,8 @@
         </article>
 
         <article>
-            <div class="w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="300" class="w-80">
                 <header>
                     <div class="w-80 h-48 overflow-hidden inline-block rounded-lg cursor-pointer">
                         <img class="hover:scale-105 duration-300 transition-transform ease-in" src="../../assets/images/home/post_image.jpg" alt="Imagen en base de datos">
@@ -61,7 +63,8 @@
         </article>
 
         <article>
-            <div class="w-80">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
+            data-aos-delay="500" class="w-80">
                 <header>
                     <div class="w-80 h-48 overflow-hidden inline-block rounded-lg cursor-pointer">
                         <img class="hover:scale-105 duration-300 transition-transform ease-in" src="../../assets/images/home/post_image.jpg" alt="Imagen en base de datos">
