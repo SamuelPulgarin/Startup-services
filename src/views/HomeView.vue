@@ -1,19 +1,14 @@
 <template>
-    <div class="bg-gray-800 px-10">
-        <NavbarLayout />
-        <VideoComponent 
-            :thumb="thumbImage" 
-            :thumbWidth="768" 
-            :thumbHeight="432" 
-            :video="videoVideo" 
-            :videoWidth="1920"
-            :videoHeight="1080" />
-        <CeoComponent />
-        <ActionComponent />
-        <TeamComponent />
-        <PostComponent />
-        <FooterLayout />
-    </div>
+
+    <NavbarLayout />
+    <VideoComponent :thumb="thumbImage" :thumbWidth="768" :thumbHeight="432" :video="videoVideo" :videoWidth="1920"
+        :videoHeight="1080" />
+    <CeoComponent />
+    <ActionComponent />
+    <TeamComponent />
+    <PostComponent />
+    <FooterLayout />
+
 </template>
 
 <script setup>

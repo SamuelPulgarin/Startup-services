@@ -10,4 +10,6 @@ createApp(App)
     .use(router)
     .mount('#app');
 
-AOS.init();
+AOS.init({
+    once: true,
+});
