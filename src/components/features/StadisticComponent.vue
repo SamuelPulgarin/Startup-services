@@ -31,15 +31,15 @@
                     omnis
                 </h3>
 
-                <div class="flex gap-x-14 mt-10 bg-gray-700 py-5 px-8">
-                    <div class="flex flex-col justify-center items-center w-72">
+                <div class="flex justify-center divide-x divide-gray-600 mt-10 bg-gray-700 py-5 px-8">
+                    <div class="flex flex-col justify-center items-center w-72 mr-5">
                         <h2 class="text-4xl font-semibold text-indigo-500">
                             179K
                         </h2>
                         <p class="text-lg text-center font-medium text-gray-400 mt-3">Lorem ipsum is placeholder text commonly used.</p>
                     </div>
 
-                    <div class="flex flex-col justify-center items-center w-72 mx-5">
+                    <div class="flex flex-col justify-center items-center w-72">
                         <h2 class="text-4xl font-semibold text-indigo-500">
                             147%
                         </h2>
@@ -54,12 +54,9 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
+
+        <div class="hidden mt-20 sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
     </section>
 
 </template>

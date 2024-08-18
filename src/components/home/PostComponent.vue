@@ -94,6 +94,8 @@
         </article>
     </section>
 
+    <div class="hidden mt-16 sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+
 </template>
 
 <script setup>
