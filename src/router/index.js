@@ -1,7 +1,7 @@
 import {createWebHistory, createRouter} from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
-import { ROUTE_FEATURES, ROUTE_HOME } from "./router";
+import { ROUTE_FEATURES, ROUTE_HOME, ROUTE_PRICING } from "./router";
 
 const routes = [
     {
@@ -17,6 +17,11 @@ const routes = [
         path: ROUTE_FEATURES,
         name: "features.show",
         component: () => import("../views/FeaturesView.vue")
+    },
+    {
+        path: ROUTE_PRICING,
+        name: "pricing.show",
+        component: () => import("../views/PricingView.vue")
     }
 ]
 
