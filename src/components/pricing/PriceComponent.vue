@@ -25,7 +25,7 @@
                             </div>
                             <p class="mt-4 text-sm leading-6 text-gray-400">{{ tier.description }}</p>
                             <p class="mt-6 flex items-baseline gap-x-1">
-                                <span class="text-4xl font-bold tracking-tight text-indigo-400">{{ tier.priceMonthly
+                                <span class="text-4xl font-bold tracking-tight text-indigo-200">{{ tier.priceMonthly
                                     }}</span>
                                 <span class="text-sm font-semibold leading-6 text-gray-200">/month</span>
                             </p>

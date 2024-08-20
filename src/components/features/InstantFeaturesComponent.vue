@@ -20,7 +20,7 @@
                     <div v-for="feature in InstantFeatures" :key="feature.id"
                      data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"
                      :data-aos-delay="feature.aosDelay"
-                        class="flex flex-col justify-center items-center w-72 text-center">
+                        class="w-132 flex flex-col justify-center items-center text-center">
                         <div
                             class="z-10 flex items-center justify-center w-16 h-16 bg-indigo-600 rounded-full ring-white">
                             <span class="material-symbols-outlined text-gray-200 text-3xl">

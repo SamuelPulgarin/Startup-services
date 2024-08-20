@@ -11,6 +11,8 @@ export default {
   theme: {
     extend: {
       width: {
+        '123': '23rem',
+        '125': '25rem',
         '128': '28rem',
         '130': '30rem',
         '132': '32rem',
