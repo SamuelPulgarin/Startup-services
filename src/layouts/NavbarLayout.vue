@@ -93,7 +93,7 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-import { ROUTE_FEATURES, ROUTE_HOME, ROUTE_PRICING } from '../router/router';
+import { ROUTE_BLOG, ROUTE_FEATURES, ROUTE_HOME, ROUTE_PRICING } from '../router/router';
 import { watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 
@@ -104,6 +104,7 @@ const navigation = [
     { name: 'Features', href: ROUTE_FEATURES, current: true },
     { name: 'Pricing', href: ROUTE_PRICING, current: true },
     { name: 'About Us', href: '#', current: true },
+    { name: 'Blogs', href: ROUTE_BLOG, current: true },
 ]
 
 const updateCurrentNavigation = () => {
